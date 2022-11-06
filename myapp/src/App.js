@@ -3,6 +3,7 @@ import React from "react";
 //コンポーネント
 import Button from "./components/Button";
 import Counter from "./components/Counter";
+import MakeList from "./components/MakeList";
 import AddList from "./components/AddList";
 import "./scss/_test.scss";
 
@@ -25,11 +26,28 @@ const App = () => {
       </section>
 
       <section className='ui raised very padded text container segment'>
+        <h2 className='ui header'>Make List</h2>
+        <MakeList list={listData} />
+      </section>
+
+      <section className='ui raised very padded text container segment'>
         <h2 className='ui header'>Add List</h2>
         <AddList />
       </section>
     </div>
   );
 };
+
+//受け渡し用データ
+const listData = [
+  {
+    name: "Jane",
+    age: 21,
+  },
+  {
+    name: "Taro",
+    age: 25,
+  },
+];
 
 export default App;
