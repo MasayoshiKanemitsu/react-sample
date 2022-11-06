@@ -1,0 +1,9 @@
+//Dart sassテスト
+
+$green: #0f0;
+
+.c-test {
+  &__txt {
+    color: $green;
+  }
+}
