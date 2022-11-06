@@ -3,6 +3,7 @@ import React from "react";
 //コンポーネント
 import Button from "./components/Button";
 import Counter from "./components/Counter";
+import AddList from "./components/AddList";
 import "./scss/_test.scss";
 
 const App = () => {
@@ -21,6 +22,11 @@ const App = () => {
       <section className='ui raised very padded text container segment'>
         <h2 className='ui header'>State</h2>
         <Counter />
+      </section>
+
+      <section className='ui raised very padded text container segment'>
+        <h2 className='ui header'>Add List</h2>
+        <AddList />
       </section>
     </div>
   );
